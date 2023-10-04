@@ -23,7 +23,6 @@ def main():
 
     x = random.choice(genre)
     guess = None
-    print(x)
     start_time = time.time()  # Record the start time
     time_limit = 20  # Set the time limit (in seconds)
 

@@ -1,13 +1,14 @@
+import colorama
 import random
 import time
 from colorama import Fore
 
 def main():
-    print(Fore.CYAN + "GUESS THE MUSIC GENRE")
+    print(Fore.CYAN + "♫ GUESS THE MUSIC GENRE ♫")
     print("---------------------")
     print("")
     name = input(Fore.BLUE + "Please enter your name: ")
-    print(Fore.CYAN + "Welcome, " + name)
+    print(Fore.CYAN + "Welcome, " + name, "To The Genre Music Game.")
 
     genre = [
         "Jazz",
@@ -22,6 +23,7 @@ def main():
 
     x = random.choice(genre)
     guess = None
+    print(x)
     start_time = time.time()  # Record the start time
     time_limit = 20  # Set the time limit (in seconds)
 
@@ -42,7 +44,7 @@ def main():
             print(Fore.RED + "\nUnfortunately, you got the wrong answer. Please try again!")
 
     print('Game over!')
-    print("The correct answer is", x)
+    print("The correct answer is",Fore.YELLOW + x)
 
 if __name__ == "__main__":
     main()
